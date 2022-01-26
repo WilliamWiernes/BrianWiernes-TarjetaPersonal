@@ -1,0 +1,117 @@
+/* Fuente */
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Poppins:wght@300&display=swap');
+
+/* Fondo Particulas */
+#particles-js{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: -1;
+}
+
+/* Estilo General */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: rgb(224, 224, 233);
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    position: relative;
+    z-index: 99;
+}
+
+.card-container{
+    display: flex;
+    width: 600px;
+    height: auto;
+    background: #fff;
+    border-radius: 2px;
+    box-shadow: 1px 1px 4px 2px rgba(0,0,0, .2);
+}
+
+.header{
+    border-right: 1px solid #ddd;
+}
+
+.descripcion{
+    background: #fbfbfb;
+}
+
+.header, .descripcion{
+    padding: 20px;
+    text-align: center;
+}
+
+.header a{
+    position: relative;
+    display: block;
+}
+
+.header img{
+    border-radius: 50%;
+    box-shadow: 0 0 0 8px rgba(0, 0, 0, .06);
+    margin: 20px 20px;
+    transition: .2s;
+}
+
+.header a:hover img{
+    box-shadow: 0 0 0 12px rgba(0, 0, 0, .1);
+}
+.header h2{
+    color: #f0522a;
+}
+
+.header h4{
+    margin-bottom: 20px;
+}
+
+.descripcion{
+    position: relative;
+}
+
+.descripcion p{
+    margin: 20px 30px;
+}
+
+.descripcion .social{
+    margin-top: 25px;
+}
+
+.descripcion .social a{
+    display: inline-block;
+    padding: 0 15px;
+    color: #f0522a;
+}
+
+@media (max-width:640px){
+    .card-container{
+        display: block;
+        width: 450px;
+    }
+
+    .header{
+        padding: 20px 20px 5px 20px;
+        border: none;
+    }
+
+    .descripcion{
+        padding: 5px 20px 20px 20px;
+        background: transparent;
+    }
+
+    .header h4{
+        margin: 0;
+    }
+}
